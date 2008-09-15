@@ -43,7 +43,7 @@ begin
     report += "以下の店舗が追加されました:\n"
     report += "==========================\n"
     report += diff[:added].join "\n"
-    report += "\n"
+    report += "\n\n"
   end
 
   if diff[:removed].empty?
