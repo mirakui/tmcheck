@@ -18,7 +18,7 @@ class Stores
     conf = Pit.get('tmcheck')
     
     for i in 1..22
-      str = open(conf['url']+'/'+i.to_s)
+      str = open("#{conf['url']}/#{i}/")
       doc = Hpricot str
 
       category = (doc / 'strong').first.inner_text
